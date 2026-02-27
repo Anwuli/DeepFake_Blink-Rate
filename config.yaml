@@ -1,0 +1,19 @@
+openface:
+  path: "C:/OpenFace/OpenFace_2.2.0_win_x64/OpenFace_2.2.0_win_x64/FeatureExtraction.exe"
+  params:
+    - "-pose"
+    - "-aus"
+    - "-2Dfp"
+    - "-3Dfp"
+    - "-pdmparams"
+    - "-tracked"
+
+blink:
+  au45_threshold: 0.5
+  min_blink_frames: 2
+  max_blink_frames: 15
+  human_blink_range: [12, 30]  # blinks per minute
+
+classification:
+  model_path: "blink_classifier.pkl"
+  threshold: 0.7
